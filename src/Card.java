@@ -13,6 +13,12 @@ public class Card {
         value = v;
     }
 
+    public void printCard() {
+        System.out.print(suit);
+        System.out.println(" ");
+        System.out.println(value);
+    }
+
 }
 
  
