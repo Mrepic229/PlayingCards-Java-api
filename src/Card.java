@@ -1,21 +1,16 @@
 public class Card {
 
-    enum Suit {
-        CLUBS,
-        SPADES,
-        DIAMONDS,
-        HEARTS
-    }
-
-    enum Value {
-        
-    }
-
     private Suit suit;
-    private char value;
+    private Value value;
 
     public Card() {
+        suit = Suit.SPADES;
+        value = Value.ACE;
+    }
 
+    public Card(Suit s, Value v) {
+        suit = s;
+        value = v;
     }
 
 }
