@@ -15,7 +15,7 @@ public class Deck {
 
     public void shuffle() {
         for (int i = 0; i < 100; i++) {
-            switchTwoCards((int)Math.random() * Deck.size(), (int)Math.random() * Deck.size());
+            switchTwoCards((int)(Math.random() * Deck.size()), (int)(Math.random() * Deck.size()));
         }
     }
 
