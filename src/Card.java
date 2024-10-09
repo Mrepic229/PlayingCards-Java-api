@@ -14,9 +14,9 @@ public class Card {
     }
 
     public void printCard() {
-        System.out.print(suit);
-        System.out.println(" ");
-        System.out.println(value);
+        System.out.print(value);
+        System.out.print(" of ");
+        System.out.println(suit);
     }
 
 }
