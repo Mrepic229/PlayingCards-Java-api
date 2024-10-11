@@ -1,11 +1,29 @@
 import java.util.*;
 
 public class Player {
-    ArrayList<Card> Hand;
-    int Points;
+    private ArrayList<Card> hand;
+
+    public Player() {
+        hand = new ArrayList<Card>();
+    }
 
     public void drawCard(Deck deck) {
-        
+        hand.add(deck.popTop());
+    }
+
+    public void printHand() {
+        for (int i = 0; i < hand.size(); i++) {
+            System.out.print(""+ i + ". ");
+            hand.get(i).printCard();
+        }
+    }
+
+    public Card playCard(int index) {
+        Card result = hand.get(index);
+        hand.remove(index);
+
+        return result;
+
     }
 
 }
