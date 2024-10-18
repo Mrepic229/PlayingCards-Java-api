@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Player {
+public class Hand {
     private ArrayList<Card> hand;
 
-    public Player() {
+    public Hand() {
         hand = new ArrayList<Card>();
     }
 
