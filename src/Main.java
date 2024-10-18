@@ -5,7 +5,7 @@ public class Main {
 
     static void examples() {
         Deck myDeck = new Deck();
-        Player joe = new Player();
+        Hand joe = new Hand();
 
         myDeck.shuffle();
         //myDeck.printDeck();
